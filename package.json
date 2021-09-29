@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "cross-env NODE_ENV=production PORT=80 node app",
+    "dev": "node ./bin/www"
   },
   "dependencies": {
     "axios": "^0.21.3",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
-    "cross-env": "^7.0.3",
     "debug": "~2.6.9",
     "dotenv": "^10.0.0",
     "ejs": "~2.6.1",
